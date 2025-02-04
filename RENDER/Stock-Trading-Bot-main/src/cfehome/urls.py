@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("Bienvenue sur mon site Django déployé sur Render ! 🚀")
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
+    path('admin/', admin.site.urls),
+    path('', home),  # Route pour la page d'accueil
 ]
