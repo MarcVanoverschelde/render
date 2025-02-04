@@ -15,7 +15,7 @@ from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-ALLOWED_HOSTS = ['render-dztx.onrender.com', 'localhost', '127.0.0.1']
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-by#99_5yq34k3sxulo3j4r_f_4aube=$a7okpi^musps8dv+f7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['render-dztx.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
